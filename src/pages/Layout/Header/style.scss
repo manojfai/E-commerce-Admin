@@ -1,0 +1,23 @@
+@import "../../../index.scss";
+
+.fm_bg_header {
+  background-color: $white;
+  height: 9.7vh;
+  width: auto;
+}
+.fm_menu_img {
+  padding: 15px;
+}
+
+.fm_header_flex1 {
+  flex: 0.11;
+}
+
+.fm_header_flex2 {
+  flex: 5;
+}
+
+.fm_header_text {
+  margin-top: 30px;
+  font-size: medium;
+}

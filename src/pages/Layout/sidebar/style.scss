@@ -1,0 +1,57 @@
+@import "../../../index.scss";
+
+.fm_menu_bgcolor {
+  padding-top: 10px;
+  background-color: $dark;
+  width: 15%;
+  height: 88.7vh;
+}
+
+.fm_menu_disply {
+  margin-top: 12px;
+  display: flex;
+}
+
+.fm_menu_flex {
+  flex: 3;
+}
+
+.fm_menu_box {
+  width: 80px;
+  height: 80px;
+  border-radius: 4px;
+  margin: 10px;
+  border: 1px solid $white;
+}
+
+.fm_menu_img {
+  padding: 25px;
+  height: 30px;
+  width: 30px;
+}
+
+.fm_menu_text {
+  color: $white;
+  padding: 5px;
+  font-size: small;
+  text-align: center;
+}
+
+.fm_menu_active {
+  background-color: $white;
+}
+
+.fm_menu_active_img {
+  filter: invert(100%);
+}
+
+.fm_menu_submenu_item {
+  color: $white;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.fm_menu_submenu {
+  height: 40px;
+  margin: 10px;
+}
