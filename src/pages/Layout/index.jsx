@@ -26,7 +26,9 @@ function Layout({ BranchRoutes, MerchantRoutes, auth }) {
           <Header headMenuName={headMenuName} setHeadMenu={setHeadMenu} />
           <div style={{ display: 'flex' }}>
             <Sidebar headMenuName={headMenuName} setHeadMenu={setHeadMenu} />
-            <div style={{backgroundColor:"#fafafa",width:"83%"}}>{getRoutes()}</div>
+            <div style={{
+              backgroundColor:"#fafafa",
+              width:"83%",padding:"1.8em"}}>{getRoutes()}</div>
           </div>
         </HashRouter>
       </div>

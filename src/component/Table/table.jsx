@@ -1,4 +1,5 @@
 import { Table } from "antd";
+import './style.scss';
 
 const Tables = ({
   columns,

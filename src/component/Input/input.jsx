@@ -8,8 +8,11 @@ const Inputcomponent = ({
   defaultValue,
   allowClear,
   className,
+  label,
 }) => {
   return (
+    <>
+    <label>{label}</label>
     <Input
       placeholder={placeholder}
       size={size}
@@ -19,6 +22,7 @@ const Inputcomponent = ({
       allowClear={allowClear}
       classNames={className}
     />
+    </>
   );
 };
 

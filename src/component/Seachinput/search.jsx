@@ -1,11 +1,12 @@
-import "./search.css";
-import searchicon from "./Icon.png";
+import "./search.scss";
+// import searchicon from "./Icon.png";
+import {images} from '../../utils/images';
 
 const Searchboxcomponent = ({ placeholder, onChange }) => {
   return (
     <div className="search-container">
       <div>
-        <img src={searchicon} width="16px" height="16px"></img>
+        <img src={images.search_ic} width="16px" height="16px"></img>
       </div>
       <input
         className="search-input"

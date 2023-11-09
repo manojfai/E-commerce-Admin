@@ -8,8 +8,9 @@ import fm_orders_icon from "../assets/Images/orders_icon.png"
 import fm_dashbaord_icon from "../assets/Images/dashbaord_icon.png"
 import fm_catalog_icon from "../assets/Images/catalog_icon.png"
 import search_icon from "../assets/Images/search_icon.png"
-
-
+import copy_icon from '../assets/Images/copy_icon.png'
+import delete_icon from '../assets/Images/delete_icon.png'
+import back_icon from '../assets/Images/back_icon.png'
 
 
 export const images = {
@@ -20,4 +21,7 @@ export const images = {
     fm_dashbaord_ic: fm_dashbaord_icon,
     fm_catalog_ic: fm_catalog_icon,
     search_ic: search_icon,
+    copy_ic: copy_icon,
+    delete_ic: delete_icon,
+    back_ic: back_icon,
 }
