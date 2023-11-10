@@ -1,0 +1,27 @@
+.navigationvalue {
+    color: var(--Placeholder-Color, #6D7175);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.navigation:hover, .selected {
+    background-color: #f0f2f5;
+}
+
+.navigation {
+    height: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navdivvalue {
+    height: 2em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
