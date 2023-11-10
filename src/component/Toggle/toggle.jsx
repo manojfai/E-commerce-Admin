@@ -7,7 +7,9 @@ const Togglecomponent = ({
   unCheckedChildren,
   loading,
   className,
-  onClick
+  onClick,
+  disabled,
+  size
 }) => {
   return (
     <>
