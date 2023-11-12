@@ -1,24 +1,26 @@
-import './style.scss'
-const Contentheader = ({ contentTitle, contentParagraph, buttonLabel, width }) => {
+import './style.scss';
+const Contentheader = ({ contentTitle, contentParagraph, buttonLabel, width, wantbutton }) => {
   return (
     <div
-    className="contentheader"
-    //  style={{ display: 'flex', width: '100%' }}
-     >
-      <div 
-      className="leftcontentheader"
-    //   style={{ width: '70%', display: 'flex', flexDirection: 'column', gap: '10px' }}
+      className="contentheader"
+      //  style={{ display: 'flex', width: '100%' }}
+    >
+      <div
+        className="leftcontentheader"
+        //   style={{ width: '70%', display: 'flex', flexDirection: 'column', gap: '10px' }}
       >
         <div className="headertitle">{contentTitle}</div>
         <div className="headerparagraph">{contentParagraph}</div>
       </div>
-      <div 
-      className="rightcontentheader"
-    //   style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'flex-start', width: '30%' }}
-    >
-        <button style={{width:width}} className="createbutton">
-          {buttonLabel}
-        </button>
+      <div
+        className="rightcontentheader"
+        //   style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'flex-start', width: '30%' }}
+      >
+        {wantbutton && (
+          <button style={{ width: width }} className="createbutton">
+            {buttonLabel}
+          </button>
+        )}
       </div>
     </div>
   );
