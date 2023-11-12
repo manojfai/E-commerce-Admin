@@ -1,5 +1,18 @@
+import React, { useState } from 'react';
+import EditInventoryModal from '../../pages/Merchant/Inventory/editinvertorymodal';
 import './style.scss';
-const Contentheader = ({ contentTitle, contentParagraph, buttonLabel, width, wantbutton }) => {
+const Contentheader = ({ contentTitle, contentParagraph, buttonLabel, width, editconfirmButton }) => {
+  // for editconfirmButton
+  const [isModalVisible, setIsModalVisible] = useState(false);
+
+  const showModal = () => {
+    setIsModalVisible(true);
+  };
+
+  const handleCancel = () => {
+    setIsModalVisible(false);
+  };
+
   return (
     <div
       className="contentheader"
@@ -16,11 +29,19 @@ const Contentheader = ({ contentTitle, contentParagraph, buttonLabel, width, wan
         className="rightcontentheader"
         //   style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'flex-start', width: '30%' }}
       >
-        {wantbutton && (
+        {buttonLabel && (
           <button style={{ width: width }} className="createbutton">
             {buttonLabel}
           </button>
         )}
+
+        {editconfirmButton && (
+          // this button is for opening edit confirm modal in inventary-managestock
+          <button style={{ width: width }} className="createbutton" onClick={showModal}>
+            {editconfirmButton}
+          </button>
+        )}
+        <EditInventoryModal visible={isModalVisible} onCancel={handleCancel} />
       </div>
     </div>
   );

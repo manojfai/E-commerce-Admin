@@ -3,8 +3,17 @@ import Search from '../Seachinput/search';
 import Table from '../Table/table';
 import { images } from '../../utils/images';
 import FilterTab from '../../pages/Merchant/Orders/filtertab';
+import ManageStockFilterTab from '../../pages/Merchant/Inventory/managestockfiltertab';
 
-const Contentmain = ({ deleteButtonLabel, placeholder, columns, dataSource, enableRowSelection }) => {
+const Contentmain = ({
+  deleteButtonLabel,
+  placeholder,
+  columns,
+  dataSource,
+  enableRowSelection,
+  manageStocks,
+  orderStocks
+}) => {
   const [selectedRowKeys, setSelectedRowKeys] = useState([]);
   // const dataSource = [
   //   {
@@ -75,7 +84,8 @@ const Contentmain = ({ deleteButtonLabel, placeholder, columns, dataSource, enab
         // style={{ marginTop: '2em', display: 'flex', justifyContent: 'space-between' }}
       >
         <div>{deleteButtonLabel && <button className="buttondelete">{deleteButtonLabel}</button>}</div>
-        <FilterTab />
+        {orderStocks && <FilterTab />}
+        {manageStocks && <ManageStockFilterTab />}
         <div>
           <Search placeholder={placeholder} />
         </div>
@@ -87,6 +97,8 @@ const Contentmain = ({ deleteButtonLabel, placeholder, columns, dataSource, enab
           pagination={{ showSizeChanger: true, showQuickJumper: true }}
           rowKey={record => record.key}
           rowSelection={enableRowSelection}
+          manageStocks={manageStocks}
+          orderStocks={orderStocks}
         />
       </div>
     </div>

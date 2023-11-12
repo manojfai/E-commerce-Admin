@@ -126,7 +126,6 @@ function Orders() {
     <>
       {/* <div className="orders-head">Orders</div> */}
       <Contentheader
-        wantbutton={false}
         width={200}
         contentTitle={applabel.orders.orders.title}
         contentParagraph={applabel.orders.orders.paragraph}
