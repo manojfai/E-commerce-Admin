@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
-import { images } from '../../../utils/images';
 import { Link } from 'react-router-dom';
-
+import { images } from '../../../utils/images';
 import SubMenuItem from './menuItem.json';
-
 import './style.scss';
 
 function Sidebar({ headMenuName, setHeadMenu }) {
   const setMenuFlag = data => {
     setHeadMenu(data);
   };
+
   return (
     <>
       {headMenuName === 'Dashboard' ? (
+        // Dashboard Menu Section
         <div className="fm_menu_bgcolor">
           <div className="fm_menu_disply">
             <div
@@ -65,11 +65,14 @@ function Sidebar({ headMenuName, setHeadMenu }) {
           </div>
         </div>
       ) : (
+        // Submenu Section
         <div className="fm_menu_bgcolor">
           <div className="fm_menu_submenu">
             {SubMenuItem.map((data, i) => (
-              <Link to={data.name}>
-                <div className="fm_menu_submenu_item">{data.name}</div>
+              <Link to={data.name} key={i}>
+                <div className="fm_menu_submenu_item" key={i}>
+                  {data.name}
+                </div>
               </Link>
             ))}
           </div>
