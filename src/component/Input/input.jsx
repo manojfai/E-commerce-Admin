@@ -1,4 +1,4 @@
-import { Input } from "antd";
+import { Input } from 'antd';
 
 const Inputcomponent = ({
   placeholder,
@@ -9,19 +9,21 @@ const Inputcomponent = ({
   allowClear,
   className,
   label,
+  style
 }) => {
   return (
     <>
-    <label>{label}</label>
-    <Input
-      placeholder={placeholder}
-      size={size}
-      prefix={prefix}
-      addonAfter={addonAfter}
-      defaultValue={defaultValue}
-      allowClear={allowClear}
-      classNames={className}
-    />
+      <label>{label}</label>
+      <Input
+        placeholder={placeholder}
+        size={size}
+        prefix={prefix}
+        addonAfter={addonAfter}
+        defaultValue={defaultValue}
+        allowClear={allowClear}
+        style={style}
+        classNames={className}
+      />
     </>
   );
 };
