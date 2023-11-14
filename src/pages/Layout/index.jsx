@@ -9,7 +9,13 @@ function Layout({ BranchRoutes, MerchantRoutes, auth }) {
     return auth === 'admin' ? (
       <Routes>
         <Route path="/" element={BranchRoutes[0].component}></Route>
-        <Route path="/Products" element={MerchantRoutes[1].component}></Route>
+        <Route path="/product" element={BranchRoutes[1].component}></Route>
+        <Route path="/products" element={MerchantRoutes[2].component}></Route>
+        <Route path="/productcombo" element={MerchantRoutes[3].component}></Route>
+        <Route path="/collections" element={MerchantRoutes[4].component}></Route>
+        <Route path ="/products/create" element={MerchantRoutes[5].component}></Route>
+        <Route path ="/productcombo/create" element={MerchantRoutes[6].component}></Route>
+        <Route path ="/collections/create" element={MerchantRoutes[7].component}></Route>
       </Routes>
     ) : (
       <Routes>

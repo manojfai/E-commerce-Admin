@@ -64,15 +64,22 @@ function Sidebar({ headMenuName, setHeadMenu }) {
             </div>
           </div>
         </div>
-      ) : (
-        // Submenu Section
+      ) : headMenuName === 'Catalog' ?
+      <div className="fm_menu_bgcolor">
+          <div className="fm_menu_submenu">
+            {SubMenuItem.catelog.map((data, i) => (
+              <Link to={data.to}>
+                <div className="fm_menu_submenu_item">{data.name}</div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      :(
         <div className="fm_menu_bgcolor">
           <div className="fm_menu_submenu">
-            {SubMenuItem.map((data, i) => (
-              <Link to={data.name} key={i}>
-                <div className="fm_menu_submenu_item" key={i}>
-                  {data.name}
-                </div>
+            {SubMenuItem.Products.map((data, i) => (
+              <Link to={data.name}>
+                <div className="fm_menu_submenu_item">{data.name}</div>
               </Link>
             ))}
           </div>

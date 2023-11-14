@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import EditInventoryModal from '../../pages/Merchant/Inventory/editinvertorymodal';
 import './style.scss';
-const Contentheader = ({ contentTitle, contentParagraph, buttonLabel, width, editconfirmButton }) => {
+import { useNavigate } from 'react-router-dom';
+
+const Contentheader = ({ contentTitle, contentParagraph, buttonLabel, width, editconfirmButton,navigatepath }) => {
   // for editconfirmButton
   const [isModalVisible, setIsModalVisible] = useState(false);
+  const navigate = useNavigate();
 
   const showModal = () => {
     setIsModalVisible(true);
@@ -12,6 +15,10 @@ const Contentheader = ({ contentTitle, contentParagraph, buttonLabel, width, edi
   const handleCancel = () => {
     setIsModalVisible(false);
   };
+
+  const handlecreatebuttonclick = () => {
+    navigatepath &&  navigate(navigatepath);
+  }
 
   return (
     <div
@@ -30,7 +37,7 @@ const Contentheader = ({ contentTitle, contentParagraph, buttonLabel, width, edi
         //   style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'flex-start', width: '30%' }}
       >
         {buttonLabel && (
-          <button style={{ width: width }} className="createbutton">
+          <button style={{ width: width }} onClick={handlecreatebuttonclick} className="createbutton">
             {buttonLabel}
           </button>
         )}

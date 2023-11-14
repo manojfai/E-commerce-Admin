@@ -19,9 +19,23 @@ const Mer_Dashboard = React.lazy(() =>
   import("../pages/Merchant/Dashboard/index")
 );
 
-const Mer_Products = React.lazy(() =>
+const Mer_Product = React.lazy(() =>
   import("../pages/Merchant/Products/index")
 );
+
+const Mer_ProductsCombo = React.lazy(() =>
+  import("../pages/Merchant/Catelog/ProductCombo/index")
+)
+
+const Mer_Collections = React.lazy(()=>import ("../pages/Merchant/Catelog/Collections/index"));
+
+const Mer_Products = React.lazy(() => import("../pages/Merchant/Catelog/Product/index"));
+
+const Mer_Createproduct = React.lazy(() => import("../pages/Merchant/Catelog/Product/create"));
+
+const Mer_Createproductcombo = React.lazy(() => import("../pages/Merchant/Catelog/ProductCombo/create"));
+
+const Mer_Createcollections = React.lazy(() => import("../pages/Merchant/Catelog/Collections/create"))
 
 let auth = "admin";
 
@@ -33,7 +47,13 @@ const Routers = () => {
 
   const MerchantRoutes = [
     { path: "/", component: <Mer_Dashboard /> },
-    { path: "/Products", component: <Mer_Products /> },
+    { path: "/Product", component: <Mer_Product /> },
+    { path: "/products", component: <Mer_Products />},
+    { path: "/productcombo", component: <Mer_ProductsCombo />},
+    { path: "/collections", component: <Mer_Collections />},
+    { path: "/products/create", component: <Mer_Createproduct />},
+    { path: "/productcombo/create", component: <Mer_Createproductcombo />},
+    { path: "/collections/create", component: <Mer_Createcollections />}
   ];
 
   return (

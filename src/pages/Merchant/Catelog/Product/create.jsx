@@ -28,8 +28,8 @@ function Productcreate() {
             <img src={images.back_ic} width="24px" height="24px"></img>
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-            <div className="listproductshead">Create Product</div>
-            <div className="listproductspara">
+            <div className="headertitle">Create Product</div>
+            <div className="headerparagraph">
               Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing
             </div>
           </div>

@@ -1,0 +1,14 @@
+.addpcbutton {
+    display: flex;
+    width: 172px;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 4px;
+border: 1px solid var(--textfield-color, #AEB4B9);
+
+/* shadow-button */
+box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.05);
+}

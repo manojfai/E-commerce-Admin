@@ -8,6 +8,9 @@ import Check from './check.jsx';
 import Productlist from '../Catelog/Product/index.jsx';
 import Productcombo from '../Catelog/ProductCombo/index.jsx';
 import Collection from '../Catelog/Collections/index.jsx';
+import Checkboxcomponent from '../../../component/Checkbox/checkbox.jsx';
+import ImageUploaderAntd from '../../../component/AddImage/ImageUploaderAntd.jsx';
+import LoginPage from '../../Login/Login.jsx';
 
 function Products() {
   const [selectedRowKeys, setSelectedRowKeys] = useState([]);
@@ -63,11 +66,17 @@ function Products() {
     }
   };
   return (
-    <>Admin products</>
+    // <Checkboxcomponent label="check" />
+    // <>Admin products</>
     // <Collection />
     // <Productcombo width="13em"/>
     // <Productlist />
-    // <Productcreate />
+    <Productcreate />
+
+    // <LoginPage />
+
+    // <ImageUploaderAntd />
+
     // <Check
     //   contentTitle="List of Products"
     //   contentParagraph="Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing"

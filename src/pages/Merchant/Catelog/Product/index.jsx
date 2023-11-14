@@ -39,6 +39,7 @@ const Productlist = () => {
         contentTitle={applabel.catelog.products.title}
         contentParagraph={applabel.catelog.products.paragraph}
         buttonLabel={applabel.catelog.products.createproductbutton}
+        navigatepath = "/products/create"
       />
       <Contentmain
         deleteButtonLabel={applabel.catelog.products.deleteproductbutton}

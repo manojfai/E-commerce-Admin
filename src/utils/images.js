@@ -8,6 +8,7 @@ import search_icon from '../assets/Images/search_icon.png';
 import copy_icon from '../assets/Images/copy_icon.png';
 import delete_icon from '../assets/Images/delete_icon.png';
 import back_icon from '../assets/Images/back_icon.png';
+import productsearch_icon from '../assets/Images/productsearch_icon.png';
 
 export const images = {
   fm_menu_ic: fm_menu_icon,
@@ -19,5 +20,6 @@ export const images = {
   search_ic: search_icon,
   copy_ic: copy_icon,
   delete_ic: delete_icon,
-  back_ic: back_icon
+  back_ic: back_icon,
+  productsearch_ic: productsearch_icon,
 };

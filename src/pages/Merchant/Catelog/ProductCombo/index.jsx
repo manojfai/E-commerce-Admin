@@ -3,7 +3,7 @@ import Contentmain from '../../../../component/Content/contentMain.jsx';
 import applabel from '../../../../utils/env.json';
 import { images } from '../../../../utils/images.js';
 
-const Productcombo = ({width}) => {
+const Productcombo = () => {
     const columns = [
         {
           title: 'Product Name',
@@ -40,7 +40,8 @@ const Productcombo = ({width}) => {
         contentTitle={applabel.catelog.productscombo.title}
         contentParagraph={applabel.catelog.productscombo.paragraph}
         buttonLabel={applabel.catelog.productscombo.createproductcombobutton}
-        width={width}
+        width="13em"
+        navigatepath="/productcombo/create"
       />
       <Contentmain
         placeholder={applabel.catelog.productscombo.searchplaceholder}

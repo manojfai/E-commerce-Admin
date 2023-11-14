@@ -54,6 +54,7 @@ const Collection = () => {
         contentTitle={applabel.catelog.Collections.title}
         contentParagraph={applabel.catelog.Collections.paragraph}
         buttonLabel={applabel.catelog.Collections.addcollectionbutton}
+        navigatepath="/collections/create"
       />
       <Contentmain
         // deleteButtonLabel={applabel.catelog.Collections.deleteproductbutton}

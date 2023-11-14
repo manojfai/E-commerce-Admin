@@ -1,5 +1,23 @@
-[
-  {
-    "name": "Products"
-  }
+{
+  "Products":[
+    {
+      "name":"Products",
+      "to":"/product"
+    }
+  ],
+  "catelog":[
+    {
+      "name":"Products",
+      "to":"/products"
+    },
+    {
+      "name":"Product Combo",
+      "to":"/productcombo"
+    },
+    {
+      "name":"Collections",
+      "to":"/collections"
+    }
 ]
+}
+

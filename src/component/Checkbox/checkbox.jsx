@@ -6,18 +6,22 @@ const Checkboxcomponent = ({
   checked,
   disabled,
   defaultChecked,
+  className
 }) => {
+
+
   return (
-    <>
+    
       <Checkbox
+        className={className}
         onChange={onChange}
-        checked={checked}
+        // checked={checked}
         disabled={disabled}
         defaultChecked={defaultChecked}
       >
         {label}
       </Checkbox>
-    </>
+    
   );
 };
 

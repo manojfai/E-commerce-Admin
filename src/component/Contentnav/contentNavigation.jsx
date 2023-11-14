@@ -3,7 +3,7 @@ import { Card } from "antd";
 const Contentnav = ({ navValue }) => {
   return (
     navValue?.length > 0 && (
-      <Card style={{ width: '35%' }}>
+      <Card style={{ width: '35%',height:"max-content" }}>
       <div style={{ marginBottom: '1em' }} className="titlenav">
         Quick Navigation
       </div>
