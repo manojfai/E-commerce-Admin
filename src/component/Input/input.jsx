@@ -9,7 +9,8 @@ const Inputcomponent = ({
   allowClear,
   className,
   label,
-  style
+  style,
+  type
 }) => {
   return (
     <>
@@ -23,6 +24,7 @@ const Inputcomponent = ({
         allowClear={allowClear}
         style={style}
         classNames={className}
+        type={type}
       />
     </>
   );
