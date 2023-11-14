@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link,useNavigate } from 'react-router-dom';
 import { images } from '../../../utils/images';
 import SubMenuItem from './menuItem.json';
 import './style.scss';
 
 function Sidebar({ headMenuName, setHeadMenu }) {
+
+  const navigate = useNavigate();
   const setMenuFlag = data => {
     setHeadMenu(data);
   };
@@ -28,6 +30,7 @@ function Sidebar({ headMenuName, setHeadMenu }) {
               className="fm_menu_flex fm_menu_box"
               onClick={() => {
                 setMenuFlag('Catalog');
+                navigate("/products")
               }}>
               <img src={images.fm_catalog_ic} className="fm_menu_img" />
               <div className="fm_menu_text">Catalog</div>

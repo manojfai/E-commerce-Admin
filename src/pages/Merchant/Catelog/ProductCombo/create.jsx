@@ -5,11 +5,21 @@ import Inputcomponent from '../../../../component/Input/input';
 import ImageUploaderAntd from '../../../../component/AddImage/ImageUploaderAntd';
 import Select from '../../../../component/Select/select';
 import Checkboxcomponent from '../../../../component/Checkbox/checkbox';
+import Contentnav from '../../../../component/Contentnav/contentNavigation';
+import Createheader from '../Component/Create/createheader';
+import applabel from '../../../../utils/env.json'
 
 const Productcombocreate = () => {
   return (
-    <div style={{ width: '100%', height: 'auto', display: 'flex', flexDirection: 'column', gap: '2em' }}>
-      <div style={{ display: 'flex', width: '100%' }}>
+    <div 
+    // style={{ width: '100%', height: 'auto', display: 'flex', flexDirection: 'column', gap: '2em' }}
+    className='createpage'
+    >
+        <Createheader
+        title={applabel.catelog.products.create.producttitle}
+        paragraph={applabel.catelog.products.create.productpara}
+      />
+      {/* <div style={{ display: 'flex', width: '100%' }}>
         <div style={{ display: 'flex', gap: '1em', width: '70%' }}>
           <div>
             <img src={images.back_ic} width="24px" height="24px"></img>
@@ -27,28 +37,20 @@ const Productcombocreate = () => {
             Cancel
           </button>
 
-          {/* <Button className='buttonc'>Cancel</Button> */}
           <button style={{}} className="buttons">
             Save
           </button>
-          {/* <Button className='buttons'>Save</Button> */}
         </div>
-      </div>
-      <div style={{ display: 'flex', gap: '1em', width: '100%' }}>
-        <div style={{ width: '65%' }}>
+      </div> */}
+      <div 
+    //   style={{ display: 'flex', gap: '1em', width: '100%' }}
+      className='createcontent'>
+        <div 
+        // style={{ width: '65%' }}
+        className='leftcreatecontent'>
           <Form
             name="basic"
             layout="vertical"
-            // labelCol={{
-            //   span: 8
-            // }}
-            // wrapperCol={{
-            //   span: 16
-            // }}
-            // style={{
-            //   maxWidth: window.innerWidth < 600 ? '' : 600,
-            //   marginTop: '10px'
-            // }}
             // onFinish={onFinish}
             // onFinishFailed={onFinishFailed}
             style={{ display: 'flex', flexDirection: 'column', gap: '2em' }}
@@ -89,9 +91,17 @@ const Productcombocreate = () => {
           </Form.Item>
                 </Card>
                 <Card >
-          <div style={{display:"flex",gap:"2em",flexDirection:"column"}}>
-          <div style={{display:"flex",width:"100%"}}>
-            <div style={{width:"60%",display:"flex",flexDirection:"column",gap:"0.5em"}}>
+          <div 
+        //   style={{display:"flex",gap:"2em",flexDirection:"column"}}
+        className='createimgcard'>
+          <div 
+          className='imgcardhead'
+        //   style={{display:"flex",width:"100%"}}
+        >
+            <div 
+            // style={{width:"60%",display:"flex",flexDirection:"column",gap:"0.5em"}}
+            className='leftimgcard'
+            >
               <div className='addimghead'>
               Add Image
               </div>
@@ -107,9 +117,17 @@ const Productcombocreate = () => {
           </div>
         </Card>
         <Card>
-        <div style={{display:"flex",gap:"2em",flexDirection:"column"}}>
-          <div style={{display:"flex",width:"100%"}}>
-            <div style={{width:"100%",display:"flex",flexDirection:"column",gap:"0.5em"}}>
+        <div 
+        // style={{display:"flex",gap:"2em",flexDirection:"column"}}
+        className='createimagecard'>
+          <div 
+        //   style={{display:"flex",width:"100%"}}
+        className='imgcardhead'
+        >
+            <div 
+            className='prodleftimgcard'
+            // style={{width:"100%",display:"flex",flexDirection:"column",gap:"0.5em"}}
+            >
               <div className='addimghead'>
               Select applicable products              </div>
               <div className='addimgmsg'>
@@ -182,7 +200,8 @@ const Productcombocreate = () => {
         </Card>
             </Form>
         </div>
-      </div>
+        <Contentnav navValue={['product', 'information', 'image', 'pricing']} />
+      </div>     
     </div>
   );
 };

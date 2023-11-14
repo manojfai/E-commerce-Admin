@@ -1,12 +1,23 @@
 import { Card, Form } from 'antd';
 import { images } from '../../../../utils/images';
 import Inputcomponent from '../../../../component/Input/input';
-import './style.scss'
+// import './style.scss'
+import Contentnav from '../../../../component/Contentnav/contentNavigation';
+import Createheader from '../Component/Create/createheader';
+import applabel from '../../../../utils/env.json';
+import '../Product/style.scss';
 
 const Collectionscreate = () => {
   return (
-    <div style={{ width: '100%', height: 'auto', display: 'flex', flexDirection: 'column', gap: '2em' }}>
-      <div style={{ display: 'flex', width: '100%' }}>
+    <div 
+    // style={{ width: '100%', height: 'auto', display: 'flex', flexDirection: 'column', gap: '2em' }}
+    className='createpage'
+    >
+        <Createheader
+        title={applabel.catelog.Collections.create.producttitle}
+        paragraph={applabel.catelog.Collections.create.productpara}
+      />
+      {/* <div style={{ display: 'flex', width: '100%' }}>
         <div style={{ display: 'flex', gap: '1em', width: '70%' }}>
           <div>
             <img src={images.back_ic} width="24px" height="24px"></img>
@@ -23,29 +34,22 @@ const Collectionscreate = () => {
           <button style={{}} className="buttonc">
             Cancel
           </button>
-
-          {/* <Button className='buttonc'>Cancel</Button> */}
           <button style={{}} className="buttons">
             Save
           </button>
-          {/* <Button className='buttons'>Save</Button> */}
         </div>
-      </div>
-      <div style={{ display: 'flex', gap: '1em', width: '100%' }}>
-        <div style={{ width: '65%' }}>
+      </div> */}
+      <div 
+      className='createcontent'
+    //   style={{ display: 'flex', gap: '1em', width: '100%' }}
+    >
+        <div 
+            className='leftcreatecontent'
+        // style={{ width: '65%' }}
+        >
           <Form
             name="basic"
             layout="vertical"
-            // labelCol={{
-            //   span: 8
-            // }}
-            // wrapperCol={{
-            //   span: 16
-            // }}
-            // style={{
-            //   maxWidth: window.innerWidth < 600 ? '' : 600,
-            //   marginTop: '10px'
-            // }}
             // onFinish={onFinish}
             // onFinishFailed={onFinishFailed}
             style={{ display: 'flex', flexDirection: 'column', gap: '2em' }}
@@ -72,7 +76,6 @@ const Collectionscreate = () => {
               <Form.Item
                 name="subtext"
                 label={<label className="label">URL</label>}
-                // style={{ display: 'inline-block', width: 'calc(50% - 1em)' }}
                 hasFeedback>
                 <Inputcomponent />
               </Form.Item>
@@ -83,20 +86,23 @@ const Collectionscreate = () => {
                     Product Description
                   </label>
                 }
-                // style={{ display: 'inline-block', width: 'calc(50% - 1em)', margin: '0 1em' }}
                 hasFeedback>
                 <Inputcomponent />
               </Form.Item>
             </Card>
             <Card>
             <div className="productinfo">Product Combo<span className='label'> (Add atleast 4)</span><span className="requirestar">*</span></div>
-            <div style={{display:"flex",justifyContent:"center",alignItems:"center",height:"10em"}}>
+            <div 
+            // style={{display:"flex",justifyContent:"center",alignItems:"center",height:"10em"}}
+            className="addprodbutton">
                 <button className='addpcbutton'>Add Products Combo</button>
             </div>
             </Card>
           </Form>
         </div>
+        <Contentnav navValue={['product', 'information', 'image', 'pricing']} />
       </div>
+      
     </div>
   );
 };
