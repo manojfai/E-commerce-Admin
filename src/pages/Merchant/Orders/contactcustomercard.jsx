@@ -3,7 +3,7 @@ import { Card, Input, Button } from 'antd';
 
 const { TextArea } = Input;
 
-const ConfirmOrderButtonCard = () => {
+const ContactCustomerCard = () => {
   const handelSend = e => {
     console.log('message is sent to customer');
   };
@@ -57,4 +57,4 @@ const ConfirmOrderButtonCard = () => {
   );
 };
 
-export default ConfirmOrderButtonCard;
+export default ContactCustomerCard;

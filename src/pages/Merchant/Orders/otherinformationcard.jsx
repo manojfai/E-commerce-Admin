@@ -41,7 +41,7 @@ const CenteredContent = ({ children }) => (
   </div>
 );
 
-const App = () => (
+const OrderInformationCard = () => (
   <Card
     style={{
       width: '752px',
@@ -129,4 +129,4 @@ const App = () => (
   </Card>
 );
 
-export default App;
+export default OrderInformationCard;
