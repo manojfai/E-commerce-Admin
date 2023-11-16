@@ -6,3 +6,19 @@
   letter-spacing: 0px;
   text-align: left;
 }
+
+// order progress slider css overide
+.ant-slider.ant-slider-disabled .ant-slider-track {
+  background-color: #FF9017!important;
+}
+
+.ant-slider.ant-slider-disabled .ant-slider-handle::after {
+  background-color: #FF9017;
+}
+
+.ant-slider.ant-slider-disabled .ant-slider-handle::after {
+  box-shadow:0 0 0 2px #FF9017;
+}
+.ant-slider-horizontal .ant-slider-track{
+  height: 2px;
+}

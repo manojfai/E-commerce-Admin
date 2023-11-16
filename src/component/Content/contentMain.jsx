@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Search from '../Seachinput/search';
 import Table from '../Table/table';
 import { images } from '../../utils/images';
-import FilterTab from '../../pages/Merchant/Orders/filtertab';
+import FilterTab from '../../pages/Merchant/Orders/Order/filtertab';
 import ManageStockFilterTab from '../../pages/Merchant/Inventory/managestockfiltertab';
 
 const Contentmain = ({
