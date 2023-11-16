@@ -1,0 +1,68 @@
+{
+  "title": "Email Notification",
+  "description": "Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing",
+  "button":"Save Settings",
+  "orderfeedback": {
+    "subtitle": "Order and Feedback",
+    "ordersummaryheader": "Order Summary",
+    "ordersummarydescription": "Send an email containing the order's details when an order has been placed",
+    "ordershippedheader": "Order Shipped",
+    "ordershippeddescription": "Send an email containing the shipping and tracking details",
+    "orderdeclinedheader": "Order Declined",
+    "orderdeclineddescription": "Send an email when you decline an order",
+    "abandonedshoppingcartheader": "Abandoned Shopping Cart",
+    "abandonedshoppingcartdescription": "Will send a link next day to customers who've added pending items in cart",
+    "cancellationrequestapprovedheader": "Cancellation Request Approved",
+    "cancellationrequestapproveddescription": "Send an email when you cancel an order",
+
+    "orderconfirmedheader": "Order Confirmed",
+    "orderconfirmeddescription": "Send an email when you confirm an order",
+    "orderdeliveredheader": "Order Delivered",
+    "orderdelivereddescription": "Send an email after the order has been delivered",
+    "productfeedbackheader": "Product Feedback",
+    "productfeedbackdescription": "Get feedback for the order by email",
+    "ordercancellationrequestedheader": "Order Cancellation Requested",
+    "ordercancellationrequesteddescription": "Send an email when a cancellation is requested",
+    "cancellationrequestdeclinedheader": "Cancellation Request Declined",
+    "cancellationrequestdeclineddescription": "Send an email when you decline a cancellation request"
+  },
+
+  "returnrefund": {
+    "subtitle": "Return and Refund",
+    "orderrefundinitiatedheader": "Order Refund Initiated",
+    "orderrefundinitiateddescription": "Send an email after you initiate a refund",
+    "cancellationrequestapprovedheader": "Cancellation Request Approved",
+    "cancellationrequestapproveddescription": "Send an email when you cancel an order",
+    "orderreturnrequestedheader": "Order Return Requested",
+    "orderreturnrequesteddescription": "Send an email when a return request is initiated",
+    "returnrequestdeclinedheader": "Return Request Declined",
+    "returnrequestdeclineddescription": "Send an email when you decline a return",
+    "pickuporderconfirmedheader": "Pick Up Order Confirmed",
+    "pickuporderconfirmedescription": "Send an email when you confirm a pick up order",
+    "pickuporderpickedupheader": "Pickup Order Picked Up",
+    "pickuporderpickedupdescription": "Send an email when your pick-up order has been delivered",
+
+    "cancellationrequestdeclinedheader": "Cancellation Request Declined",
+    "cancellationrequestdeclineddescription": "Send an email when you decline a cancellation request",
+    "returnrequestapprovedheader": "Return Request Approved",
+    "returnrequestapproveddescription": "Send an email containing the return ID when the customer initiates a return",
+    "pickupordersummaryheader": "Pick Up Order Summary",
+    "pickupordersummarydescription": "Send an email containing the pick-up order's details",
+    "pickuporderreadypickupdheader": "Pickup Order Ready for Pick Up",
+    "pickuporderreadypickupdescription": "Send an email when your order has arrived at the pick up location"
+  },
+  "emailsowner": {
+    "subtitle": "Emails to Owner",
+    "lowstockproductsheader": "Low Stock Products",
+    "lowstockproductsdescription": "Get emails when a product's stock is low",
+    "orderplacedheader": "Order Placed",
+    "orderplaceddescription": "Get an email each time an order is placed",
+    "orderreturnedheader": "Order Returned",
+    "orderreturneddescription": "Get an email when an order is returned",
+
+    "outstockproductsheader": "Out of Stock Products",
+    "outstockproductsdescription": "Get emails when a product goes out of stock",
+    "ordercancelledheader": "Order Cancelled",
+    "ordercancelleddescription": "Get an email when an order is cancelled"
+  }
+}

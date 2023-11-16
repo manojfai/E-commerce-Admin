@@ -18,6 +18,12 @@
       "name":"Collections",
       "to":"/collections"
     }
+],
+"Settings":[
+    {
+      "name":"Settings",
+      "to":"/settings"
+    }
 ]
 }
 

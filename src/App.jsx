@@ -4,7 +4,6 @@ import { PersistGate } from 'redux-persist/integration/react';
 import { persistStore } from 'redux-persist';
 import { store } from './redux/store';
 import Routers from './routers/Routers';
-// import Login from './pages/Login/Login';
 
 // const Routers = React.lazy(() => import("./routers/Routers"));
 
